@@ -1,15 +1,16 @@
-const fibonacci = function(num) {
-    if (num < 1){
+const fibonacci = function(num_int) {
+    
+    if (num_int < 1){
         return "OOPS"
     }
-    if(num == 1){
+    if(num_int == 1){
         return 1
     }
-    if(num == 2){
+    if(num_int == 2){
         return 1
     }
     else{
-        return fibonacci(num-1) + fibonacci(num-2)
+        return fibonacci(num_int-1) + fibonacci(num_int-2)
     }
 };
 
